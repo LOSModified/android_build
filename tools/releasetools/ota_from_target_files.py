@@ -862,8 +862,6 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
                              progress=progress_dict.get(block_diff.partition),
                              write_verify_script=OPTIONS.verify)
 
-  CheckVintfIfTrebleEnabled(OPTIONS.input_tmp, target_info)
-
   boot_img = common.GetBootableImage(
       "boot.img", "boot.img", OPTIONS.input_tmp, "BOOT")
   common.CheckSize(boot_img.data, "boot.img", target_info)
@@ -1455,8 +1453,6 @@ def WriteBlockIncrementalOTAPackage(target_zip, source_zip, output_file):
                                         target_info=target_info,
                                         source_info=source_info,
                                         device_specific=device_specific)
-
-  CheckVintfIfTrebleEnabled(OPTIONS.target_tmp, target_info)
 
   # Assertions (e.g. device properties check).
   target_info.WriteDeviceAssertions(script, OPTIONS.oem_no_mount)
