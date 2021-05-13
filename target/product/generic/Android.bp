@@ -405,11 +405,6 @@ android_filesystem_defaults {
     name: "product_image_defaults",
     deps: [
         ///////////////////////////////////////////
-        // media_product
-        ///////////////////////////////////////////
-        "webview",
-
-        ///////////////////////////////////////////
         // base_product
         ///////////////////////////////////////////
 
@@ -751,11 +746,9 @@ system_image_defaults {
         common: {
             deps: [
                 "BackupRestoreConfirmation", // base_system
-                "BasicDreams", // handheld_system
                 "BlockedNumberProvider", // handheld_system
                 "BluetoothMidiService", // handheld_system
                 "BookmarkProvider", // handheld_system
-                "BuiltInPrintService", // handheld_system
                 "CalendarProvider", // handheld_system
                 "CallLogBackup", // telephony_system
                 "CameraExtensionsProxy", // handheld_system
@@ -777,7 +770,6 @@ system_image_defaults {
                 "ExtShared", // base_system
                 "ExternalStorageProvider", // handheld_system
                 "FusedLocation", // handheld_system
-                "HTMLViewer", // media_system
                 "InputDevices", // handheld_system
                 "IntentResolver", // base_system
                 "KeyChain", // handheld_system
@@ -787,7 +779,6 @@ system_image_defaults {
                 "MediaProviderLegacy", // base_system
                 "MmsService", // handheld_system
                 "MtpService", // handheld_system
-                "MusicFX", // handheld_system
                 "NetworkStack", // base_system
                 "ONS", // telephony_system
                 "PacProcessor", // handheld_system
@@ -808,7 +799,6 @@ system_image_defaults {
                 "TeleService", // handheld_system
                 "Telecom", // handheld_system
                 "TelephonyProvider", // handheld_system
-                "Traceur", // handheld_system
                 "UserDictionaryProvider", // handheld_system
                 "VpnDialogs", // handheld_system
                 "WallpaperBackup", // base_system
