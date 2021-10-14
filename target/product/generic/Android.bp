@@ -598,7 +598,6 @@ system_image_defaults {
         "keylayout_data",
         "keystore2",
         "ld.mc",
-        "llkd", // base_system
         "lmkd", // base_system
         "locksettings", // base_system
         "logcat", // base_system
