@@ -28,8 +28,6 @@ PRODUCT_PACKAGES += \
 
 DEVICE_PACKAGE_OVERLAYS := device/generic/goldfish/overlay
 
-PRODUCT_CHARACTERISTICS := emulator
-
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 
 # goldfish vendor partition configurations
@@ -46,7 +44,3 @@ $(call inherit-product-if-exists, device/generic/goldfish/vendor.mk)
 # like NetworkLocationProvider and LocationCollector
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     ro.com.google.locationfeatures=1
-
-# disable setupwizard
-PRODUCT_SYSTEM_EXT_PROPERTIES += \
-    ro.setupwizard.mode?=DISABLED
